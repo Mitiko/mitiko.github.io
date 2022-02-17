@@ -8,7 +8,9 @@
 </head>
 <body>
 <main>
+    <!-- TODO: Add my info at the top - name + email -->
     <header><h1>Brain</h1></header>
+    <section>
     <p>
         There're plenty of reasons to write a blog post about the brain - to better understand our thoughts, to inspire
         better AI architectures, to expand the field of psychology, and just out of pure curiosity.
@@ -31,57 +33,107 @@
         <li>Evolutionary approved design</li>
         <li>More powerful in broader tasks - decision maing, content creation, problem solving, etc.</li>
         <li>Adaptive reward function</li>
+        <li>Constantly active (how does sleep play a role?)</li>
+        <li>Attached to a physical body; better motor functions</li>
+        <li>Needs less data to make meaningful decisions (2-3 examples are enough, compared to thousands needed for current NN)</li>
     </ul>
-    <h2 id="preface">Preface</h2>
+    <p>
+        Machines have far surpassed us in any individual task but can't beat us to generality yet. In fact, this is a race with evolution!
+        Evolution, the natural force of creation, has perfected the human being (and it's brain) but it could only do that in the span of
+        millions of years. It is entropy-based, progress is achieved by mutations once a generation and is extremely slow and volatile.<br>
+        The existence of lasers and microscopes is proof that we can beat evolution with premeditated optimizations. It is up to us to
+        build a superior system, an AI, it is our turn to play god. We need to know what is essential to the daily brain functions,
+        to learning, to problem solving, to creativity, in order to build the analogues in silicone.
+    </p>
+    <hr>
+    </section>
+    <section id="preface">
+    <h2>Preface</h2>
     <p>
         I'd be lying if I said this is my brain theory, for it can barely be called a theory.
-        I prefer you look at it as a proposition for a model of the brain, explored in the context of psychology and AI.<br><br>
+        I prefer you look at it as a proposition for a model of the brain, explored in the context of psychology and AI.
+        I am open to criticism and contributions.<br><br>
 
         I'll be talking about the (functionally) different "parts" of the brain but be not mistaken, evolution is not so caring
-        as to organize brain cells in tidy groups for us to understand them better. Brain connections are chaotically formed and
-        every statement about the brain can only be generally true with small ranges of
+        as to organize brain cells in distinct tidy groups. [Brain] connections are chaotically formed and
+        any statement about the brain can at best be <i>generally</i> true.<br><br>
 
+        Don't get tangled in the ontologies of things, instead try to take a more
+        <a href="https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)" target="_blank">formalistic</a> approach and
+        focus on the relations of things and the methodologies they follow.
+    </p>
+    <hr>
+    <h2 id="reasoning">Reasoning</h2>
+    <p>
         <!-- TODO: reward function vs loss function diff -->
-        <hr>
-        <!-- // reasoning
-        // problem solving
-        // thinking
-        //
+        The [human] brain is always active, always thinking - it's important to understand the types of thoughts that occur and (later on)
+        how they correlate. Methods of reasoning are usually considered in the context of logic, and if logic seems too idealistic to apply
+        to reality, remember any field of science exists for the sole purpose of being useful and cater to us, not the  other way around.<br><br>
 
-        // why is this article?
-        // to connect to computer science? -->
-
-        There're 3 main types of <em>logical reasoning:</em>
+        Smarter people before me have distinguished 3 main types of <em>logical reasoning</em> that are morphologically
+        different in the direction and accuracy of asserting truth:
     </p>
     <ul>
         <li>
             <b><span><a href="https://en.wikipedia.org/wiki/Deductive_reasoning" target="_blank">&lt;wiki&gt;</a></span> Deductive reasoning: </b>
-            combining multiple premises to reach a logical conclusion<br>
-            &#8594;Given all swans are mortal and your pet is a swan, then your pet is mortal.<br>
-            Deductive reasoning goes top-down, restricting
+            combining multiple premises to reach a strictly logical conclusion.<br>
+            &#8594;Given all swans are mortal and your pet is a swan, then your pet swan is also mortal.<br>
+            Deductive reasoning goes top-down, reducing statements to more informationally dense conclusions.
             <div class="cool-facts">
                 <!-- TODO: Write -->
                 Sherlock Holmes and diffs with abductive reasoning.
             </div>
+            <!-- TODO: Add image with graphics  (for them all, actually) -->
         </li>
         <li>
-            <b>Inductive reasoning: </b>
-            using a sample of posteriors to validate (with a factor of uncertainty) the posteriors of the similiar priors.
-            If all swans seen are white, then all swans must be white. (Not exactly, because there're black swans)
+            <b><span><a href="https://en.wikipedia.org/wiki/Inductive_reasoning" target="_blank">&lt;wiki&gt;</a></span> Inductive reasoning: </b>
+            combining multiple observations to suggest a general principle.<br>
+            &#8594;If all swans <i>seen</i> are white, then all swans must be white. (innacurate, because there're black swans)
         </li>
         <li>
-            <b>Abductive reasoning: </b>
-
+            <b><span><a href="https://en.wikipedia.org/wiki/Abductive_reasoning" target="_blank">&lt;wiki&gt;</a></span> Abductive reasoning: </b>
+            inference to the best explanation.<br>
+            Abduction is opposite in direction to deduction. From an observed effect, multiple causes are considered and the most probable one is chosen.<br>
+            &#8594;Swans can fly. Swans have wings. They don't use their wings when swimming. It's likely swans can fly because of their wings.
         </li>
     </ul>
     <p>
-
+        In practice we employ all types of reasoning on the daily, though it's hard to classify each thought to just a single class.
+        There're two more less considered methods of reasoning that will serve us more than they do in the field of logic:
     </p>
+    <ul>
+        <li>
+            <b><span><a href="https://en.wikipedia.org/wiki/Defeasible_reasoning" target="_blank">&lt;wiki&gt;</a></span> Probabilistic reasoning: </b>
+            dealing with uncertainty.<br>
+            &#8594;If 80% of swans are white, then 20% of swans are black.
+        </li>
+        <li>
+            <b><span><a href="https://en.wikipedia.org/wiki/Defeasible_reasoning" target="_blank">&lt;wiki&gt;</a></span> Statistical reasoning: </b>
+            making predictions based on past data.<br>
+            &#8594;I tried to pet a swan and it bit me. Therefore, swans bite.<br>
+            &#8594;I saw someone feed a swan then pet it and it didn't bite them. Therefore, swans bite 50% of the time.
+        </li>
+    </ul>
+    <p>
+        You may notice how abductive reasoning can play a role in the last example. Instead of concluding swans bite 50% of the time, we can
+        also take into consideration that the swan was fed before the attempted pet in one case, and wasn't in the other. Then we may come
+        to the conclusion that if you try to pet a swan, it won't bite you but only if you feed it.<br><br>
+        <!-- TODO: There's a famous experiment where pigeons are fed at random times but they overfit the training data and it becomes funny. -->
+        Statistical reasoning is also closely related to induction. It's important to note that it's only statistical reasoning to do the
+        pattern matching - observing that our current situation is most similiar to some past situation(s). Assuming the current situation will conclude
+        similiarly is a type of inductive reasoning.<br><br>
+
+        Probabilistic reasoning and statistical also seem a bit ambiguous. Statistics take advantage of data, while probabilistic reasoning
+        deals with uncertainty in the data itself - for example forgetting if you fed the swan before you pet it.
+    </p>
+    <hr>
+    </section>
     <!-- <h3 id="keywords">Keywords</h3>
     <p>
         Reserved to explain key-words that are hard to understand or often misinterpreted.
     </p> -->
-    <h2>Structure</h2>
+    <!-- <h2>Structure</h2> -->
 </main>
+<footer><p>&copy; 2022 mitikox - Dimitar Rusev</p></footer>
 </body>
 </html>

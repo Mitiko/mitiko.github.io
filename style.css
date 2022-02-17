@@ -22,6 +22,10 @@ footer {
     background-color: rgb(216, 216, 216);
 }
 
+footer > p {
+    margin: 0.7em 0;
+}
+
 
 /* TODO: Add box shadow to articles */
 article > h2 > a {
@@ -30,7 +34,7 @@ article > h2 > a {
     color: rgb(173, 34, 173);
 }
 
-ul::before {
+ul[aria-label]::before {
     content: attr(aria-label);
     font-size: 110%;
     font-weight: bold;
